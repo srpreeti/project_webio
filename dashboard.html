@@ -1,0 +1,109 @@
+<div class="dashboard">
+  <div>
+    <div class="nav">
+      <ul>
+        <!-- <h2 id="demo9">FoodPanda</h2> -->
+        <li><a ng-href="#/home">Home</a></li>
+        <li><a ng-href="#/dashboard">Movies</a></li>
+        <li><a ng-href="#/fav">Favourites</a></li>
+        <li><a ng-href="#/logout">Logout</a></li>
+      </ul>
+    </div>
+    <!-- <div class="categoriesSort">
+        <select
+          name=""
+          id=""
+          ng-change="findByCategory(category)"
+          ng-model="category"
+        >
+          <option value="pizza">Pizza</option>
+          <option value="rice">Rice</option>
+          <option value="burger">Burger</option>
+        </select>
+      </div> -->
+    <div class="sortBtns">
+      <button ng-click="sortInc()">sort by Id increment</button>
+      <button ng-click="sortDec()">Dec sort by Id Decrement</button>
+    </div>
+    <div>
+      <input type="text" ng-change="search()" ng-model="searchTxt" />
+    </div>
+    <div class="products">
+      <!-- </divng-if=> -->
+      <div
+        ng-if="default"
+        class="product"
+        ng-repeat="x in dashboard_all_products"
+      >
+        <div ng-click="sendSingleProduct(x)">
+          <div class="product-image">
+            <img
+              ng-src="https://image.tmdb.org/t/p/original{{x.poster_path}}"
+              alt=""
+            />
+          </div>
+          <div class="product-name">{{x.title}}</div>
+          <div class="product-price">{{x.popularity}}</div>
+        </div>
+        <div class="product-fav">
+          <button ng-if="isThereInFav(x)" ng-click="removeFromFav(x)">
+            Remove Fav
+          </button>
+          <button ng-if="!isThereInFav(x)" ng-click="addToFav(x)">
+            Add to Fav
+          </button>
+        </div>
+      </div>
+
+      <div
+        ng-if="increment"
+        class="product"
+        ng-repeat="x in dashboard_all_products | orderBy:'popularity'"
+      >
+        <div ng-click="sendSingleProduct(x)">
+          <div class="product-image">
+            <img
+              ng-src="https://image.tmdb.org/t/p/original{{x.poster_path}}"
+              alt=""
+            />
+          </div>
+          <div class="product-name">{{x.title}}</div>
+          <div class="product-price">{{x.popularity}}</div>
+        </div>
+        <div class="product-fav">
+          <button ng-if="isThereInFav(x)" ng-click="removeFromFav(x)">
+            Remove Fav
+          </button>
+          <button ng-if="!isThereInFav(x)" ng-click="addToFav(x)">
+            Add to Fav
+          </button>
+        </div>
+      </div>
+
+      <div
+        ng-if="decrement"
+        class="product"
+        ng-repeat="x in dashboard_all_products | orderBy:'-popularity'"
+      >
+        <div ng-click="sendSingleProduct(x)">
+          <div class="product-image">
+            <img
+              ng-src="https://image.tmdb.org/t/p/original{{x.poster_path}}"
+              alt=""
+            />
+          </div>
+          <div class="product-name">{{x.title}}</div>
+          <div class="product-price">{{x.popularity}}</div>
+        </div>
+        <div class="product-fav">
+          <button ng-if="isThereInFav(x)" ng-click="removeFromFav(x)">
+            Remove Fav
+          </button>
+          <button ng-if="!isThereInFav(x)" ng-click="addToFav(x)">
+            Add to Fav
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

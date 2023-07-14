@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<div ng-if="!toggle" id="demo">
+  
+    <!-- <form> -->
+        <h2 id="demo4">Registration</h2>
+        <h3 id="demo5"> WEBIO</h3>
+        <br><br>
+      <label for="name">Username:</label>
+      <input
+        type="text"
+        
+        id="name"
+        ng-model="$parent.reg_name"
+      /><br /><br />
+      <!-- <p>{{reg_name}}</p> -->
+      <label for="email">Useremail:</label>
+      <input
+        type="email"
+        
+        id="email"
+        ng-model="$parent.reg_email">
+      <br /><br />
+      <!-- <p>{{useremail}}</p> -->
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" ng-model="$parent.reg_password"><br /><br />
+      </p>
+
+      <!-- <p>{{userpassword}}</p> -->
+      <button ng-click="register()"><a ng-href="#/login">Register</a></button>
+    <!-- </form> -->
+     <!-- <br> -->
+    <!-- <button ng-click="changeView()" id="demo3">SignIn</button> -->
+  </div>
+
+</body>
+</html>

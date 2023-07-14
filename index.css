@@ -1,0 +1,249 @@
+body{
+
+   background-image: url("https://cdn.wallpapersafari.com/46/94/AitWwC.jpg");
+   background-repeat: no-repeat;
+}
+
+   #demo{
+    margin-top:auto;
+    border: 1px solid black;
+    width: 300px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    padding-top:auto;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+ }
+ #demo:hover{
+    border-color: white;
+    color:white;
+ }
+ #demo1{
+    margin-top:auto;
+    border: 1px solid black;
+    width: 300px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    padding-top:auto;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+ }
+ #demo1:hover{
+    border-color: white;
+    color:white;
+ }
+ #demo2:hover{
+    color: gray;
+
+ }
+ #demo3:hover{
+    color: gray;
+
+ }
+ #demo4{
+    text-align: center;
+ }
+ #demo5{
+    text-align: center;
+ }
+
+ .home{
+   background-color:aquamarine;
+   display: flex;
+   /* justify-content: center; */
+   flex-direction: column;
+   /* align-items: center; */
+   height: 100vh;
+   width: 100vw;
+}
+
+
+.home > .nav{
+   display: flex;
+   justify-content: center;
+}
+.home > .nav > ul{
+   display: flex;
+   justify-content: space-around;
+   width: 50%;
+   list-style: none;
+   font-size: 20px;
+   font-weight: bold;
+   border: 2px solid #000;
+   background-color: #fff;
+}
+
+.home > .nav > ul > li{
+   cursor: pointer;
+   padding: 20px;
+}
+
+.home > div > .nav > ul > li:hover{
+   background-color: pink;
+}
+
+.home > h1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+.dashboard{
+   width: 100vw;
+   /* height: 100vh; */
+   /* padding-top: 200px; */
+   background-color:rgb(60, 25, 25);
+}
+
+.dashboard>div .products{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 20px;
+   /* padding: 20px; */
+   /* background-color: #fff; */
+   /* border-radius: 10px; */
+   /* box-shadow: 0 0 10px #000; */
+}
+
+.dashboard>div .sortBtns{
+   display: flex;
+   justify-content: center;
+}
+
+.dashboard > div > .sortBtns > button{
+   margin: 20px;
+}
+
+.dashboard>div .categoriesSort{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+select{
+   padding: 10px;
+   border: none;
+   background-color: gray;
+   border-radius: 30px;
+   font-size: 15px;
+   width:60px;
+}
+
+.dashboard .product{
+   width: 500px;
+   height: 500px;
+}
+
+.dashboard img{
+   width: 200px;
+   height: 200px;
+}
+
+
+button{
+   margin-top: 10px;
+   background-color: #fff;
+   border: 1px solid #000;
+   border-radius: 5px;
+   padding: 5px;
+   cursor: pointer;
+}
+button:hover{
+   background-color: #000;
+   color: #fff;
+}
+
+/* .search{
+   background-color: #000;
+} */
+
+.dashboard > div > .nav{
+   display: flex;
+   justify-content: center;
+}
+.dashboard > div > .nav > ul{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   margin-top: 1px;
+   list-style: none;
+   font-size: 20px;
+   font-weight: bold;
+   border: 2px solid #000;
+   background-color: rgb(59, 21, 21);
+   border-radius:5px;
+}
+
+.dashboard > div > .nav > ul > li{
+   cursor: pointer;
+   padding: 20px;
+}
+
+.dashboard > div > .nav > ul > li:hover{
+   background-color:gray;
+}
+
+.home{
+   /* background-color:navy; */
+   background: linear-gradient(to right,  black, rgb(137, 76, 76), rgb(142, 142, 94));
+   display: flex;
+   /* justify-content: center; */
+   flex-direction: column;
+   /* align-items: center; */
+   height: 100vh;
+   width: 100vw;
+}
+
+
+.home > .nav{
+   display: flex;
+   justify-content: center;
+}
+.home > .nav > ul{
+   display: flex;
+   justify-content: space-around;
+   width: 50%;
+   list-style: none;
+   font-size: 20px;
+   font-weight: bold;
+   border: 2px solid #000;
+   background-color: #fff;
+}
+
+.home > .nav > ul > li{
+   cursor: pointer;
+   padding: 20px;
+}
+
+.home > div > .nav > ul > li:hover{
+   background-color:pink;
+}
+
+.home > h1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+
+a{
+   text-decoration: none;
+   color: #000;
+}
+
+a:hover{
+   color: white;
+}
+
+.login  a{
+   color: blue;
+   text-decoration: underline;
+}

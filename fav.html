@@ -1,0 +1,34 @@
+<div class="products">
+  <div>
+    <!-- <div class="nav">
+      <ul>
+        
+        <li><a ng-href="#/home">Home</a></li>
+        <li><a ng-href="#/dashboard">Movies</a></li>
+        <li><a ng-href="#/fav">Favourites</a></li>
+        <li><a ng-href="#/logout">Logout</a></li>
+      </ul>
+    </div> -->
+    <div class="products">
+      <div class="products">
+        <div class="product" ng-repeat="x in favProducts">
+          <div ng-click="sendSingleProduct(x)">
+            <div class="product-image">
+              <img
+                ng-src="https://image.tmdb.org/t/p/original{{x.poster_path}}"
+                alt=""
+                width="150px"
+              />
+            </div>
+            <div class="product-title">{{x.title}}</div>
+            <div class="product-id">{{x.id}}</div>
+            <div class="product-description">{{x.name}}</div>
+          </div>
+          <div class="product-fav">
+            <button ng-click="removeFromFav(x)">Remove Fav</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

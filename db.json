@@ -1,0 +1,101 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "p",
+      "city": "noida"
+    },
+    {
+      "id": 2,
+      "name": "p",
+      "city": "noida1"
+    },
+    {
+      "name": "preyu",
+      "email": "srpreeti0903@gmail.com",
+      "password": "Qwerty@123",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "name": "preyu",
+      "email": "srpreeti0309@gmail.com",
+      "password": "Asd@123",
+      "id": 5
+    },
+    {
+      "name": "preyu",
+      "email": "srpreeti0903@gmail.com",
+      "password": "Asd@123",
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "name": "preyu",
+      "email": "srpreeti0903@gmail.com",
+      "password": "Qaz@123",
+      "id": 8
+    },
+    {
+      "name": "preyu",
+      "email": "annii7080@gmail.com",
+      "password": "Az@12",
+      "id": 9
+    },
+    {
+      "name": "preyu",
+      "email": "srpreeti0903@gmail.com",
+      "password": "Az@12",
+      "id": 10
+    },
+    {
+      "name": "preyu",
+      "email": "annii7080@gmail.com",
+      "password": "Az@12",
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "username": "ankii",
+      "email": "anii12@gmail.com",
+      "password": "Az@12",
+      "id": 13
+    },
+    {
+      "username": "anki",
+      "email": "a1@gmail.com",
+      "password": "Az@12",
+      "id": 14
+    },
+    {
+      "name": "preyu",
+      "email": "srpreeti0903@gmail.com",
+      "password": "Az@123",
+      "id": 15
+    }
+  ],
+  "favs": []
+}
